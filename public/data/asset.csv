@@ -1,0 +1,9 @@
+id,asset_name,asset_type,model,serial_number,location,status,acquisition_date,acquisition_value,observations,responsible_id
+1,Laptop Dell Latitude 5420,Laptop,Latitude 5420,DLL-5420-001,Oficina Central,active,2023-05-12,1200.00,Equipo administrativo,2
+2,Laptop HP ProBook 450,Laptop,ProBook 450 G8,HP-450-002,Oficina Central,in_maintenance,2023-06-20,1100.00,Presenta lentitud,3
+3,Servidor Principal,Server,PowerEdge R740,SRV-740-003,Data Center,active,2022-09-10,8500.00,Servidor de producción,1
+4,Impresora Epson L6270,Printer,L6270,EPS-6270-004,Recepción,inactive,2024-01-15,450.00,Sin uso actualmente,4
+5,Switch Cisco 2960,Network,Catalyst 2960,CIS-2960-005,Data Center,active,2023-03-11,1800.00,Core de red,1
+6,Laptop Lenovo ThinkPad T14,Laptop,T14 Gen 3,LNV-T14-006,Finanzas,active,2024-04-02,1450.00,Asignada a finanzas,5
+7,Monitor Samsung 27,Monitor,S27R350,SAM-027-007,RRHH,retired,2021-02-15,220.00,Pantalla dañada,4
+8,PC Escritorio OptiPlex,Desktop,OptiPlex 7090,DLL-7090-008,Desarrollo,active,2024-05-10,980.00,Equipo de desarrollo,2

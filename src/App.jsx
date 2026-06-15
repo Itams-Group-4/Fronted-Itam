@@ -28,8 +28,6 @@ const PAGE_LABELS = {
   users: "Usuarios",
 };
 
-// Páginas visibles según el rol del usuario autenticado.
-// Mantener sincronizado con los `roles` definidos en Sidebar.jsx.
 const PAGE_ROLES = {
   dashboard: ["admin"],
   assets: ["admin", "technician"],
@@ -48,14 +46,11 @@ function AppShell() {
   const [currentPage, setCurrentPage] = useState(() => defaultPageForRole(user?.role));
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
-  // Si el usuario no tiene permiso para la página actual (p. ej. cambió de
-  // sesión o el rol no incluye esa vista), redirige a su página por defecto.
   useEffect(() => {
     const allowedRoles = PAGE_ROLES[currentPage] || [];
     if (!allowedRoles.includes(user?.role)) {
       setCurrentPage(defaultPageForRole(user?.role));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const handleNavigate = (page) => {
